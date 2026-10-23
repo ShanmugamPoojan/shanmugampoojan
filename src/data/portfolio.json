@@ -1,0 +1,306 @@
+{
+  "profile": {
+    "name": "Shanmugam Poojan S",
+    "title": "Full Stack Developer",
+    "subtitle": "Full Stack Developer | Creative Problem Solver",
+    "description": "Building beautiful and interactive web experiences with React, Node.js, and modern web technologies.",
+    "description2": "Building beautiful and interactive web experiences with React, Node.js, and modern web technologies.",
+    "email": "shanmugam@example.com",
+    "phone": "+91 XXXXXXXXXX",
+    "location": "India"
+  },
+  "home": {
+    "hero": {
+      "name": "Poojan",
+      "title": "I'm Shanmugam Poojan",
+      "subtitle": "Full Stack Developer | Creative Problem Solver",
+      "description": "Building beautiful and interactive web experiences with React, Node.js, and modern web technologies."
+    }
+  },
+  "about": {
+    "title": "Who am I?",
+    "intro": "I'm a passionate full-stack developer from India with a love for creating beautiful, functional web experiences. I specialize in modern web technologies and am always eager to learn new things.",
+    "interests": "When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community. I'm also interested in web design, UI/UX principles, and building products that solve real-world problems.",
+    "photo": "profile-pic.JPG",
+    "story": {
+      "images": [
+        "about_internship2.jpeg",
+        "about_jssstu1.jpeg",
+        "about_ellucian1.jpeg"
+      ],
+      "paragraphs": [
+        "My journey into technology began with a natural curiosity about computers and a desire to explore new things. I have always been someone who enjoys creating and experimenting, which eventually led me towards web technologies and software development. I completed my Bachelor of Computer Applications (BCA) from JSS Science and Technology University, Mysuru, and I am currently pursuing my Master of Computer Applications (MCA) from Jain University, Bengaluru, with a specialization in Cloud Computing. I am passionate about building new and creative things, learning new technologies, and continuously expanding my knowledge.",
+        "My strongest technical areas currently include Frontend Development, JavaScript, SQL, and PL/SQL, while I am actively working on strengthening my knowledge in other areas, particularly cloud technologies. Beyond technology, I have a creative side that I enjoy exploring through arts and crafts, crochet, and reading. I also value the time I spend with the people I love. I believe that creativity is not limited to one field—it is a way of thinking that can be applied to both technology and life. My personal philosophy is simple: 'You can, if you think you can.' I believe that confidence, determination, and the willingness to learn can take us further than we initially imagine."
+      ]
+    }
+  },
+  "skillsList": [
+    {
+      "name": "JavaScript",
+      "category": "Language",
+      "description": "Core language used to build interactive, dynamic behavior across every project."
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "description": "Component-based library used to build fast, reusable user interfaces."
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "description": "JavaScript runtime used to build scalable server-side applications and APIs."
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database",
+      "description": "NoSQL database used for flexible, document-based data storage."
+    },
+    {
+      "name": "CSS/HTML",
+      "category": "Frontend",
+      "description": "Foundational markup and styling used to structure and design every page."
+    },
+    {
+      "name": "Git",
+      "category": "Tools",
+      "description": "Version control system used to track changes and collaborate on code."
+    },
+    {
+      "name": "REST API",
+      "category": "Backend",
+      "description": "Designing and consuming APIs for client-server communication."
+    },
+    {
+      "name": "MySQL",
+      "category": "Database",
+      "description": "Relational database used for structured, query-based data storage."
+    }
+  ],
+  "skillsInitialVisible": 4,
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with payment integration",
+      "tags": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "image": "amazon-pic.png",
+      "link": "https://github.com/shanmugampos/ecommerce"
+    },
+    {
+      "title": "Task Management App",
+      "description": "Collaborative task manager with real-time updates",
+      "tags": [
+        "React",
+        "Firebase",
+        "Tailwind"
+      ],
+      "image": "ccms-pic.png",
+      "link": "https://github.com/shanmugampos/ecommerce"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "Real-time weather app with location services",
+      "tags": [
+        "React",
+        "API",
+        "Charts.js"
+      ],
+      "image": "hostfinder-pic.png",
+      "link": "https://github.com/shanmugampos/weather"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Personal portfolio with smooth animations and transitions",
+      "tags": [
+        "React",
+        "Vite",
+        "CSS"
+      ],
+      "image": "portfolio-pic.png",
+      "link": "https://github.com/shanmugampos/portfolio"
+    }
+  ],
+  "journeyIntro": "My journey into the world of technology has been shaped by curiosity, determination, and a desire to create something of my own. From the beginning of my educational journey, I was interested in computers and technology. I was also one of the brighter students in my class and always had a curiosity to explore new things. I would describe myself as an ambivert—someone who can enjoy both social interactions and personal time.",
+  "journey": [
+    {
+      "id": 0,
+      "section": "journey",
+      "title": "The Beginning",
+      "subTitle": "Stepping into the world of Computer Science",
+      "duration": "2022",
+      "description": "After completing school, I had the grades to pursue engineering and could have joined a good engineering college. However, I chose a different path. I decided to pursue a Bachelor of Computer Applications, even though BCA is often considered by many as a secondary choice compared to engineering. For me, it was a conscious decision.",
+      "description2": "I wanted to prove that I could build a successful career with the path I had chosen. I did not want my degree to define my limitations. Instead, I wanted my skills, hard work, and determination to define what I could achieve. During my BCA journey, I became aware that engineering students often had greater exposure to certain technologies and opportunities. Rather than regretting my decision, I saw it as a challenge. I wanted to achieve everything I could with the degree I had chosen and create my own opportunities. That mindset pushed me to work harder and eventually helped me secure an on-campus internship at Ellucian."
+    },
+    {
+      "id": 1,
+      "section": "journey",
+      "title": "Bachelor of Computer Applications",
+      "subTitle": "JSS Science and Technology University, Mysore",
+      "duration": "Aug 2022 - Jun 2025",
+      "description": "After completing school, I had the grades to pursue engineering and could have joined a good engineering college. However, I chose a different path. I decided to pursue a Bachelor of Computer Applications, even though BCA is often considered by many as a secondary choice compared to engineering. For me, it was a conscious decision.",
+      "description2": "I wanted to prove that I could build a successful career with the path I had chosen. I did not want my degree to define my limitations. Instead, I wanted my skills, hard work, and determination to define what I could achieve. During my BCA journey, I became aware that engineering students often had greater exposure to certain technologies and opportunities. Rather than regretting my decision, I saw it as a challenge. I wanted to achieve everything I could with the degree I had chosen and create my own opportunities. That mindset pushed me to work harder and eventually helped me secure an on-campus internship at Ellucian.",
+      "image": [
+        "about_jssstu1.jpeg",
+        "about_jssstu2.jpeg",
+        "about_jssstu3.jpeg",
+        "about_jssstu4.jpeg",
+        "about_jssstu5.jpeg"
+      ]
+    },
+    {
+      "id": 2,
+      "section": "journey",
+      "title": "Technical Intern",
+      "subTitle": "Ellucian Higher Education Solutions, Bengaluru",
+      "duration": "Jan 2025 - Aug 2025",
+      "description": "Created responsive and interactive UI components using React and CSS.",
+      "image": [
+        "about_internship1.jpeg",
+        "about_internship2.jpeg",
+        "about_internship3.jpeg",
+        "about_internship4.jpeg",
+        "about_internship5.jpeg"
+      ]
+    },
+    {
+      "id": 3,
+      "section": "journey",
+      "title": "Associate Technical Consultant",
+      "subTitle": "Ellucian Higher Education Solutions, Bengaluru",
+      "duration": "Jul 2025 - Present",
+      "description": "Created responsive and interactive UI components using React and CSS.",
+      "image": [
+        "about_ellucian1.jpeg",
+        "about_ellucian2.jpeg",
+        "about_ellucian3.jpeg",
+        "about_ellucian4.jpeg",
+        "about_ellucian5.jpeg"
+      ]
+    }
+  ],
+  "journeyNotes": {
+    "start": "Where it all began",
+    "startSub": "It all started with curiosity.",
+    "end": "Excited for what's next",
+    "endSub": "The journey continues. Still learning, still building."
+  },
+  "achievements": [
+    "Built and deployed 10+ projects",
+    "Contributed to open-source projects",
+    "Solved complex technical challenges",
+    "Continuously learning new technologies"
+  ],
+  "more": {
+    "interests": {
+      "initialVisible": 4,
+      "items": [
+        {
+          "name": "Coding",
+          "category": "Tech",
+          "tag": ".build",
+          "description": "Building beautiful and interactive web experiences with React, Node.js and modern web technologies."
+        },
+        {
+          "name": "Web Design & UI/UX",
+          "category": "Design",
+          "tag": ".design",
+          "description": "Exploring web design and UI/UX principles, and building products that solve real-world problems."
+        },
+        {
+          "name": "Anime",
+          "category": "Fun",
+          "tag": ".watch",
+          "description": "One of the things I love most, and a favourite way to unwind."
+        },
+        {
+          "name": "Crochet",
+          "category": "Creative",
+          "tag": ".make",
+          "description": "Making things by hand, part of the creative side I enjoy outside of tech."
+        },
+        {
+          "name": "Art & Crafts",
+          "category": "Creative",
+          "tag": ".draw",
+          "description": "Drawing and arts and crafts. Creativity is a way of thinking that applies to both technology and life."
+        },
+        {
+          "name": "Reading",
+          "category": "Lifestyle",
+          "tag": ".read",
+          "description": "A quiet way to keep learning, imagining and expanding my knowledge."
+        }
+      ]
+    },
+    "story": [
+      "It started with curiosity about computers and how things work. After school I had the grades to pursue engineering, but I chose a different path: a Bachelor of Computer Applications at JSS Science and Technology University, Mysuru. It was a conscious decision, and I did not want my degree to define my limitations.",
+      "Today I work as an Associate Technical Consultant at Ellucian Higher Education Solutions in Bengaluru, and I am pursuing my Master of Computer Applications in Cloud Computing at Jain University. Frontend development, JavaScript, SQL and PL/SQL are where I feel strongest, and I am steadily building my knowledge of cloud technologies.",
+      "Away from the screen I make things by hand through arts and crafts and crochet, I read, and I watch anime. I also value the time I spend with the people I love. I believe creativity is not limited to one field, and my philosophy is simple: you can, if you think you can."
+    ],
+    "booksVisible": 8,
+    "books": [
+      {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "genre": "Self-improvement"
+      },
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "genre": "Fiction"
+      },
+      {
+        "title": "Ikigai",
+        "author": "Hector Garcia and Francesc Miralles",
+        "genre": "Philosophy"
+      },
+      {
+        "title": "Wings of Fire",
+        "author": "A. P. J. Abdul Kalam",
+        "genre": "Autobiography"
+      },
+      {
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "genre": "Programming"
+      },
+      {
+        "title": "The Pragmatic Programmer",
+        "author": "Andrew Hunt and David Thomas",
+        "genre": "Programming"
+      },
+      {
+        "title": "Deep Work",
+        "author": "Cal Newport",
+        "genre": "Productivity"
+      },
+      {
+        "title": "Rich Dad Poor Dad",
+        "author": "Robert T. Kiyosaki",
+        "genre": "Finance"
+      },
+      {
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "genre": "Finance"
+      },
+      {
+        "title": "Man's Search for Meaning",
+        "author": "Viktor E. Frankl",
+        "genre": "Psychology"
+      }
+    ]
+  },
+  "social": {
+    "github": "https://github.com/shanmugampos",
+    "linkedin": "https://linkedin.com/in/shanmugam",
+    "twitter": "https://twitter.com/shanmugampos"
+  },
+  "footer": {
+    "quote": "You can, if you think you can!",
+    "accent": "think you can"
+  }
+}

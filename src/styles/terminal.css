@@ -1,0 +1,162 @@
+/* Floating terminal + launcher (starts minimized) */
+.term {
+  position: fixed;
+  right: calc(20px + env(safe-area-inset-right, 0px));
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  width: min(370px, calc(100vw - 32px));
+  border-radius: 14px;
+  background: #0e0e10;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(24px) scale(0.92);
+  transform-origin: bottom right;
+  transition: opacity 0.35s, transform 0.45s var(--spring), visibility 0s 0.45s;
+}
+.term.open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: opacity 0.35s, transform 0.55s var(--spring), visibility 0s;
+}
+.term .bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #18181b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+.dots {
+  display: flex;
+  gap: 7px;
+}
+.dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+}
+.dot--r {
+  background: #ff5f57;
+}
+.dot--y {
+  background: #febc2e;
+}
+.dot--g {
+  background: #28c840;
+}
+.bar__title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: #8d8d93;
+}
+.tmin {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: transparent;
+  color: #cfcfd2;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.tmin:hover {
+  background: #2a2a30;
+  color: #fff;
+}
+.term .body {
+  padding: 18px 20px;
+  min-height: 190px;
+  font-family: var(--mono);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #cfcfd2;
+}
+.term.min .body {
+  display: none;
+}
+.line {
+  min-height: 1.6em;
+  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+.line b {
+  color: #f5efde;
+  font-weight: 500;
+}
+.cur {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background: #f5efde;
+  vertical-align: -2px;
+  animation: blink 1s steps(2) infinite;
+}
+
+.tlaunch {
+  position: fixed;
+  right: calc(20px + env(safe-area-inset-right, 0px));
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 18px 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: #0e0e10;
+  color: #f5efde;
+  font-family: var(--mono);
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transform: translateY(12px) scale(0.9);
+  pointer-events: none;
+  transition: opacity 0.35s, transform 0.5s var(--spring), border-color 0.2s;
+}
+.tlaunch.on {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  animation: launcher-in 0.7s var(--spring) 0.6s backwards;
+}
+.tlaunch:hover {
+  border-color: #f5efde;
+}
+.tlaunch__icon {
+  font-weight: 500;
+  color: #f5efde;
+}
+@keyframes launcher-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.85);
+  }
+}

@@ -1,0 +1,147 @@
+/* My journey: winding route + chapter cards */
+.route {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(80px, 10vw, 130px);
+  margin-top: clamp(40px, 7vw, 72px);
+  padding: clamp(150px, 17vw, 200px) 0 clamp(220px, 24vw, 280px);
+}
+.route .wcard {
+  width: 78%;
+  z-index: 1;
+}
+.route article:nth-of-type(odd) {
+  align-self: flex-start;
+}
+.route article:nth-of-type(even) {
+  align-self: flex-end;
+}
+.route__svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  overflow: visible;
+  pointer-events: none;
+}
+.route__base {
+  fill: none;
+  stroke: var(--line2);
+  stroke-width: 2;
+  stroke-dasharray: 2 11;
+  stroke-linecap: round;
+}
+.route__draw {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.route__node {
+  fill: var(--bg);
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+.route__node--fin {
+  fill: var(--accent);
+}
+.route__arrow {
+  fill: var(--accent);
+  stroke: var(--bg);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 10px var(--accent));
+}
+
+/* Chapter card */
+.chapter__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 40px);
+  align-items: start;
+}
+.chapter__body.has-media {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+}
+.chapter__text h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.05;
+  margin: 0 0 8px;
+}
+.chapter__sub {
+  margin: 0;
+  font-weight: 600;
+  color: var(--accent);
+}
+.chapter__text p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+.chapter__more {
+  grid-column: 1 / -1;
+}
+.has-media .chapter__more {
+  margin-top: -16px;
+}
+.more {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.65s var(--ease), opacity 0.5s;
+}
+.more.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.more > div {
+  overflow: hidden;
+  min-height: 0;
+}
+.more p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+/* Start / end notes on the route */
+.rnote {
+  position: absolute;
+  z-index: 2;
+  width: min(680px, 90%);
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.8s, transform 0.8s var(--ease);
+}
+.rnote em {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(30px, 5vw, 54px);
+  line-height: 1.05;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.rnote small {
+  display: block;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.rnote--start {
+  transform: translate(-50%, calc(-100% - 16px));
+}
+.rnote--start.on {
+  opacity: 1;
+  transform: translate(-50%, -100%);
+}
+.rnote--end {
+  transform: translate(-50%, 16px);
+}
+.rnote--end.on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
