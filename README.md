@@ -7,13 +7,13 @@ a winding "journey" route, and a floating terminal.
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173/myportfolio/
+npm run dev        # http://localhost:5173/shanmugampoojan/
 npm run build      # production build into dist/
 npm run preview    # serve the production build locally
 npm run deploy     # publish dist/ to GitHub Pages (gh-pages branch)
 ```
 
-`vite.config.js` sets `base: '/myportfolio/'` for GitHub Pages. Change it if the repo name changes.
+`vite.config.js` sets `base: '/shanmugampoojan/'` for GitHub Pages. Change it if the repo name changes.
 
 ## Where the content lives
 
